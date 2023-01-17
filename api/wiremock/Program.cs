@@ -12,7 +12,7 @@ class Program
             Urls = new [] { "https://login.officeapp-dev.com:447" },
             CertificateSettings = new WireMockCertificateSettings
             {
-                X509CertificateFilePath = "../certs/officeapp-dev.ssl.p12",
+                X509CertificateFilePath = "../../certs/officeapp-dev.ssl.p12",
                 X509CertificatePassword = "Password1"
             },
             StartAdminInterface = true,
@@ -22,6 +22,8 @@ class Program
 
         StandAloneApp.Start(settings);
         Console.WriteLine("Wiremock is listening on port 447 ...");
-        Console.ReadKey();
+        if(!Console.IsInputRedirected) {
+            Console.ReadKey();
+        }
     }
 }

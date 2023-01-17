@@ -19,6 +19,8 @@ tokenhandler/deployment/environments/docker-local/oauthagent.config.json
 
 api/bin
 api/obj
+api/wiremock/bin
+api/wiremock/obj
 api/resources
 api/certs
 api/trusted.ca.pem
