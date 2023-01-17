@@ -9,6 +9,13 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 #
 # Run the web host locally
 #
+npm run start:desktop -- --app excel
+if [ $? -ne 0 ]; then
+  echo 'Problem encountered starting Excel'
+  read -n 1
+  exit 1
+fi
+
 npm run startRelease
 if [ $? -ne 0 ]; then
   echo 'Problem encountered running the Web Host'

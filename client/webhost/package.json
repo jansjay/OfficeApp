@@ -7,7 +7,8 @@
     "start": "ts-node --files src/app.ts",
     "buildRelease": "rimraf dist && tsc",
     "startRelease": "node dist/app.js",
-    "debugRelease": "node --inspect dist/app.js"
+    "debugRelease": "node --inspect dist/app.js",
+    "start:desktop": "office-addin-debugging start manifest.xml desktop"
   },
   "author": "Sanjaya Jayasooriya",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "@types/node": "^14.18.35",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
+    "office-addin-debugging": "^4.6.7",
     "eslint": "^8.30.0",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
