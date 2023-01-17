@@ -1,0 +1,6 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+subjectAltName = DNS:*.officeapp-dev.com
+extendedKeyUsage=serverAuth
+[alt_names]
+DNS.1 = *.officeapp-dev.com
