@@ -9,7 +9,7 @@
     "buildRelease": "rimraf dist && tsc --outDir dist --sourceMap false",
     "startRelease": "node dist/app.js"
   },
-  "author": "Gary Archer",
+  "author": "Sanjaya Jayasooriya",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.2.1",

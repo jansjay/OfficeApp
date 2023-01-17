@@ -1,0 +1,9 @@
+{
+    "app": {
+        "webOrigin": "https://web.officeapp-dev.com",
+        "apiBaseUrl": "https://tokenhandler.officeapp-dev.com:444/api"
+    },
+    "oauth": {
+        "oauthAgentBaseUrl": "https://tokenhandler.officeapp-dev.com:444/oauth-agent"
+    }
+}
