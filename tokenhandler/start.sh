@@ -20,6 +20,12 @@ if [ ! -d '../certs' ]; then
 fi
 
 #
+# Ignores SSL Issues
+# TODO Only should be done in DEV
+#
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+
+#
 # Install API dependencies
 #
 if [ ! -d 'node_modules' ]; then

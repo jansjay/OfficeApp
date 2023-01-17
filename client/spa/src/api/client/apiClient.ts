@@ -10,7 +10,7 @@ import {AxiosUtils} from '../../plumbing/utilities/axiosUtils';
 import {ApiClientOptions} from './apiClientOptions';
 
 /*
- * A high level class used by the rest of the SPA to trigger API calls
+ * A high level class used by the rest of the Office App SPA to trigger API calls
  */
 export class ApiClient {
 
@@ -121,7 +121,7 @@ export class ApiClient {
             headers: this._getHeaders(callerOptions?.causeError),
         } as AxiosRequestConfig;
 
-        // Manage sending credentials from the SPA to the API
+        // Manage sending credentials from the Office App SPA to the API
         await this._credentialSupplier.onCallApi(options, isRetry);
 
         // Make the API request
@@ -138,7 +138,7 @@ export class ApiClient {
         const headers: any = {
 
             // Context headers included in API logs
-            'x-mycompany-api-client':     'FinalSPA',
+            'x-mycompany-api-client':     'OfficeAppSPA',
             'x-mycompany-session-id':     this._sessionId,
             'x-mycompany-correlation-id': Guid.create().toString(),
         };

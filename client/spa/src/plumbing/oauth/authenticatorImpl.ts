@@ -146,7 +146,7 @@ export class AuthenticatorImpl implements Authenticator, CredentialSupplier {
     }
 
     /*
-     * This method is for testing only, so that the SPA can receive expired access token responses
+     * This method is for testing only, so that the Office App SPA can receive expired access token responses
      */
     public async expireAccessToken(): Promise<void> {
 
@@ -165,7 +165,7 @@ export class AuthenticatorImpl implements Authenticator, CredentialSupplier {
     }
 
     /*
-     * This method is for testing only, so that the SPA can receive expired refresh token responses
+     * This method is for testing only, so that the Office App SPA can receive expired refresh token responses
      */
     public async expireRefreshToken(): Promise<void> {
 
@@ -267,7 +267,7 @@ export class AuthenticatorImpl implements Authenticator, CredentialSupplier {
             }
             console.log('_callOAuthAgent 4');
             // Supply headers for the Token Handler API to write to logs
-            options.headers['x-mycompany-api-client'] = 'FinalSPA';
+            options.headers['x-mycompany-api-client'] = 'OfficeAppSPA';
             options.headers['x-mycompany-session-id'] = this._sessionId;
             options.headers['x-mycompany-correlation-id'] = Guid.create().toString();
             console.log(options);

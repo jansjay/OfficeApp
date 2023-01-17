@@ -17,12 +17,12 @@ export class StaticContent {
 
         //if (mode === 'development') {
 
-            // During development we get files from the SPA folder, for convenience
-            this._webFilesRoot = '../../spa/dist';
+        // During development we get files from the SPA folder, for convenience
+        this._webFilesRoot = '../../spa/dist';
 
         //} else {
 
-            // In Docker the files are packaged to a subfolder of the web host
+        // In Docker the files are packaged to a subfolder of the web host
         //    this._webFilesRoot = '../spa';
         //}
     }

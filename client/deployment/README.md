@@ -8,4 +8,4 @@ A number of local development configurations are used when running on the local 
 
 | Environment | Description |
 | ----------- | ----------- |
-| dev | Local development of the SPA and running the web host on a development domain |
+| dev | Local development of the Office App SPA and running the web host on a development domain |

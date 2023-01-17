@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #######################################################
-# A script to build the SPA resources ready for running
+# A script to build the Office App SPA resources ready for running
 #######################################################
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
@@ -26,12 +26,12 @@ if [ $? -ne 0 ]; then
 fi
 
 #
-# Build the SPA's code
+# Build the Office APP SPA's code
 #
 cd ../spa
 ./build.sh
 if [ $? -ne 0 ]; then
-  echo 'Problem encountered building the SPA'
+  echo 'Problem encountered building the Office App SPA'
   exit
 fi
 cd ..

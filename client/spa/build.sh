@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###############################################
-# Install and build the SPA ready for deploying
+# Install and build the Office App SPA ready for deploying
 ###############################################
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
@@ -13,7 +13,7 @@ if [ ! -d 'node_modules' ]; then
   
   npm install
   if [ $? -ne 0 ]; then
-    echo 'Problem encountered installing SPA dependencies'
+    echo 'Problem encountered installing Office App SPA dependencies'
     exit 1
   fi
 fi
@@ -32,6 +32,6 @@ fi
 #
 npm run buildRelease
 if [ $? -ne 0 ]; then
-  echo 'Problem encountered building the SPA'
+  echo 'Problem encountered building the Office App SPA'
   exit 1
 fi

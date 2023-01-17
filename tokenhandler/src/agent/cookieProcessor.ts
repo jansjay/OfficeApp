@@ -228,7 +228,7 @@ export class CookieProcessor {
     }
 
     /*
-     * Return a cookie of the form 'mycompany-auth-finalspa'
+     * Return a cookie of the form 'mycompany-auth-officeappspa'
      */
     private _getCookieName(type: string) {
         return `${this._configuration.cookiePrefix}-${type}`;

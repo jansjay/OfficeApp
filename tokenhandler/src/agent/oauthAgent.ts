@@ -183,8 +183,8 @@ export class OAuthAgent {
                 authorization: `Bearer ${accessToken}`,
             },
             agentOptions: new https.Agent({
-                key: fs.readFileSync('./certs/officeapp-dev.ssl.key', 'utf8'),
-                cert: fs.readFileSync('./certs/officeapp-dev.ssl.p12', 'utf8'),
+                key: fs.readFileSync('../certs/officeapp-dev.ssl.key', 'utf8'),
+                cert: fs.readFileSync('../certs/officeapp-dev.ssl.p12', 'utf8'),
                 rejectUnauthorized: false,
                 keepAlive: false,
             }),

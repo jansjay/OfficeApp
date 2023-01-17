@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #################################################
-# A script to run the SPA when developing locally
+# A script to run the Office App SPA when developing locally
 #################################################
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
@@ -60,7 +60,7 @@ while [ "$(curl -k -s -o /dev/null -w ''%{http_code}'' "$WEB_ORIGIN/spa/index.ht
 done
 
 #
-# Run the SPA in the default browser, then sign in with these credentials:
+# Run the Office App SPA in the default browser, then sign in with these credentials:
 # - guestuser@mycompany.com
 # - Password1
 #

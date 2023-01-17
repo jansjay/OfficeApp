@@ -1,5 +1,5 @@
 /*
- * Data returned from the Token Handler API to the SPA, to inform it of the logged in state
+ * Data returned from the Token Handler API to the Office App SPA, to inform it of the logged in state
  */
 export interface EndLoginResponse {
 

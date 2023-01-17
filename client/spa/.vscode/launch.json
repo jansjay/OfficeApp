@@ -1,5 +1,5 @@
 {
-    // Debug the SPA directly in Visual Studio Code
+    // Debug the Office App SPA directly in Visual Studio Code
     // Requires the 'Debugger for Chrome' extension to be installed first
     "version": "0.2.0",
     "configurations": [

@@ -1,7 +1,7 @@
 {
-  "name": "finalspa",
+  "name": "officeappspa",
   "version": "3.0.0",
-  "description": "The Final SPA, which implements OpenID Connect using an API driven Back End for Front End",
+  "description": "The Final Office APP SPA, which implements OpenID Connect using an API driven Back End for Front End",
   "main": "index.tsx",
   "scripts": {
     "lint": "npx eslint . --ext .ts,.tsx",
