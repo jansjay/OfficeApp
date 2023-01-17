@@ -1,0 +1,43 @@
+{
+  "name": "oauth-agent",
+  "version": "1.0.0",
+  "description": "A custom cloud native OAuth Agent implementation for the OfficeApp",
+  "scripts": {
+    "lint": "npx eslint . --ext .ts,.tsx",
+    "start": "bash ./start.sh",
+    "test": "bash ./test/runHttpWorkflow.sh",
+    "buildRelease": "rimraf dist && tsc --outDir dist --sourceMap false",
+    "startRelease": "node dist/app.js"
+  },
+  "author": "Gary Archer",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "base64url": "^3.0.1",
+    "cookie": "^0.4.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs-extra": "^9.1.0",
+    "guid-typescript": "^1.0.9",
+    "http-proxy-middleware": "^2.0.6",
+    "proxy-agent": "^5.0.0",
+    "url-parse": "^1.5.10"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^14.18.35",
+    "@types/url-parse": "^1.4.8",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "4.9.4"
+  }
+}

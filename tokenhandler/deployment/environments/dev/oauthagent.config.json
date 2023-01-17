@@ -1,0 +1,29 @@
+{
+    "host": {
+        "port": 444,
+        "sslCertificateFileName": "./certs/officeapp-dev.ssl.p12",
+        "sslCertificatePassword": "Password1",
+        "useHttpProxy": false,
+        "httpProxyUrl": "http://127.0.0.1:8888"
+    },
+    "api": {
+        "authorizeEndpoint": "https://accounts.google.com/o/oauth2/v2/auth",
+        "tokenEndpoint": "https://oauth2.googleapis.com/token",
+        "endSessionEndpoint": "https://oauth2.googleapis.com/revoke",
+        "cookieDomain": "tokenhandler.officeapp-dev.com",
+        "cookiePrefix": "mycompany",
+        "cookieEncryptionKey": "d26d160214a85a2aa9dc80487e0c24b33d1594bda7b0e1954e99fde54f6486df",
+        "trustedWebOrigins": ["https://web.officeapp-dev.com"],
+        "provider": "cognito"
+    },
+    "client": {
+        "clientId": "1033932825689-cbucbs5to6u6tvr2kdt5aaeg03c39e8a.apps.googleusercontent.com",
+        "clientSecret": "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",
+        "redirectUri": "https://web.officeapp-dev.com/spa/",
+        "postLogoutRedirectUri": "https://web.officeapp-dev.com/spa/loggedout",
+        "scope": "openid profile email"
+    },
+    "logging": {
+        "prettyPrint": true
+    }
+}
