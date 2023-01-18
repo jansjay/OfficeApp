@@ -122,11 +122,12 @@ export class OAuthAgent {
             stateCookie.codeVerifier);
         console.log('endLogin 7');
         const refreshToken = authCodeGrantData.refresh_token;
+        console.log('RefreshToken: ' + refreshToken);
         // Refresh token might not be always returned. TODO
-        //if (!refreshToken) {
-        //    throw ErrorUtils.createGenericError(
-        //        'No refresh token was received in an authorization code grant response');
-        //}
+        if (!refreshToken) {
+            throw ErrorUtils.createGenericError(
+                'No refresh token was received in an authorization code grant response');
+        }
 
         const accessToken = authCodeGrantData.access_token;
         console.log('AccessToken: ' + accessToken);
@@ -225,7 +226,7 @@ export class OAuthAgent {
     }
 
     public async callApi(request: Request, response: Response): Promise<void> {
-        //Google id token is the JWT
+        //TODO ID Token contains JWT
         const accessToken = this._cookieProcessor.readIdCookie(request);
         console.log('callApi 1:' + accessToken);
         if (!accessToken) {

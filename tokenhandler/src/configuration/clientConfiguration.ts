@@ -12,4 +12,6 @@ export interface ClientConfiguration {
     postLogoutRedirectUri: string;
 
     scope: string;
+
+    prompt: string;
 }

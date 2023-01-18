@@ -53,9 +53,14 @@ export class AuthorizationServerClient {
         url += '&';
         url += UrlHelper.createQueryParameter('state', loginState.state);
         url += '&';
+        url += UrlHelper.createQueryParameter('prompt', this._clientConfiguration.prompt);
+        url += '&';
         url += UrlHelper.createQueryParameter('code_challenge', loginState.codeChallenge);
         url += '&';
         url += UrlHelper.createQueryParameter('code_challenge_method', 'S256');
+        url += '&';
+        //TODO set the audince to the API endpoint
+        url += UrlHelper.createQueryParameter('audience', this._clientConfiguration.redirectUri);
         return url;
     }
 
@@ -71,6 +76,8 @@ export class AuthorizationServerClient {
         formData.append('code', code);
         formData.append('redirect_uri', this._clientConfiguration.redirectUri);
         formData.append('code_verifier', codeVerifier);
+        //TODO set the audince to the API endpoint
+        formData.append('audience', this._clientConfiguration.redirectUri);
         return this._postGrantMessage(formData);
     }
 

@@ -1,0 +1,7 @@
+{
+    "port": 447,
+    "sslCertificateFileName": "../certs/officeapp-dev.ssl.p12",
+    "sslCertificatePassword": "Password1",
+    "host": ["https://openidprovider.officeapp-dev.com"],
+    "mode": "development"
+}

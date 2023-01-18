@@ -35,12 +35,12 @@
     }
   },
   "oauth": {
-    "issuer":         "https://accounts.google.com",
+    "issuer":         "https://openidprovider.officeapp-dev.com:447",
     "audience":       "",
-    "jwksEndpoint":   "https://www.googleapis.com/oauth2/v3/certs",
+    "jwksEndpoint":   "https://openidprovider.officeapp-dev.com:447/jwks",
     "claimsStrategy": "apiLookup",
     "claimsCache": {
-      "userInfoEndpoint":   "https://openidconnect.googleapis.com/v1/userinfo",
+      "userInfoEndpoint":   "https://openidprovider.officeapp-dev.com:447/m",
       "timeToLiveMinutes":  30
     }
   }
