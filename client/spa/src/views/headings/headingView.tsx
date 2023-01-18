@@ -6,6 +6,6 @@ import React from 'react';
 export function HeadingView(): JSX.Element {
 
     return (
-        <h2>OAuth Demo App</h2>
+        <h2>OfficeDev Demo App with OAuth</h2>
     );
 }
